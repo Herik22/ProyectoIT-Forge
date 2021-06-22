@@ -1,12 +1,30 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  * {
+    
+  }
 /* VALORE POR DEFECTO ------- */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-    background-color: #51b7ef;
-    /*color: black;*/
+
+text{
+    color: black;
+    font-size: 32px;
+    padding: 16px 32px;
 }
 /* ------------------------------- */
 
@@ -21,7 +39,7 @@ body{
 }
 
 
-/* COLORES DE FONDO  -------------------- */
+/* COLORES DE FONDO - TEXTO  -------------------- */
 .bg-blue-Container{
     background-color: #047997;
 }
@@ -47,6 +65,10 @@ body{
     background: linear-gradient(90deg, rgba(4,121,151,1) 6%, rgba(105,152,198,1) 48%, rgba(123,127,142,1) 93%);
 }
 
+.colorGreenMundoiT{
+    color: #5edb86;
+}
+
 /* ---------------------------------------*/
 
 
@@ -57,4 +79,128 @@ body{
     background-color: #5edb86;
 }
 
+/*                                                              NOSOTROS            */
 
+.sectionCard{
+    float:left;
+    width:100%;  
+    /* fallback for old browsers */
+    padding:30px 0;
+}
+
+/* CARDS */
+.profile-card-1 {
+    font-family: 'Open Sans', Arial, sans-serif;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    width: 100%;
+    color: #ffffff;
+    text-align: center;
+    height:368px;
+    border:none;
+  }
+  .profile-card-1 .background {
+    width:100%;
+    vertical-align: top;
+    opacity: 0.9;
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+     -webkit-transform: scale(1.8);
+    transform: scale(2.8);
+  }
+  .profile-card-1 .card-content {
+    width: 100%;
+    padding: 15px 25px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+  }
+  .profile-card-1 .profile {
+    border-radius: 50%;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    max-width: 100px;
+    opacity: 1;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
+    border: 2px solid rgba(255, 255, 255, 1);
+    -webkit-transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%);
+  }
+  .profile-card-1 h2 {
+    margin: 0 0 5px;
+    font-weight: 600;
+    font-size:25px;
+  }
+  .profile-card-1 h2 small {
+    display: block;
+    font-size: 15px;
+    margin-top:10px;
+  }
+  .profile-card-1 i {
+    display: inline-block;
+      font-size: 16px;
+      color: #ffffff;
+      text-align: center;
+      border: 1px solid #fff;
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      border-radius: 50%;
+      margin:0 5px;
+  }
+  .profile-card-1 .icon-block{
+      float:left;
+      width:100%;
+      margin-top:15px;
+  }
+  .profile-card-1 .icon-block a{
+      text-decoration:none;
+  }
+  .profile-card-1 i:hover {
+    background-color:#fff;
+    color:#2E3434;
+    text-decoration:none;
+  }
+.fa_custom {
+    color: 
+    #0099CC
+    }
+
+.div--parrafoPrincipal {
+    padding: 40px;
+    text-align: center;
+    justify-content: center;
+    font-size: 30px;
+    color: white; }
+  
+  .div__parrafoPrincipal--tittle {
+    align-self: center;
+    text-align: center;
+    font-size: 60px;
+    font-family: NickAinley, serif; }
+  
+  .div__parrafoPrincipal--tittle span {
+    text-decoration: line-through; }
+
+    
+.interstitial {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    height: 50vh;
+}
+.interstitial__foreground {
+    left: 50%;
+    max-height: 60%;
+    max-width: 80%;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
